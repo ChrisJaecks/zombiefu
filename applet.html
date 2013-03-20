@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Applet</title>
+    <script src="http://java.com/js/deployJava.js"></script>
+  </head>
+  <body>
+
+    <script>
+      var attributes = { codebase:'http://github.com/swp-sebastian/zombiefu',
+                         code:'zombiefu.ZombieFU',
+                         archive: 'target/zombiefu.jar',
+                         width: '800',
+                         height: '600'};
+
+      var parameters = { java_arguments: '-Xmx256m'};
+      var version = '1.7';
+      deployJava.runApplet(attributes, parameters, version);
+    </script>
+  </body>
+
+
+</html>

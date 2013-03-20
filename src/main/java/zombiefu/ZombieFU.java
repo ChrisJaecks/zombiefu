@@ -1,8 +1,11 @@
 package zombiefu;
 
 import zombiefu.util.ZombieGame;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
-public class ZombieFU {
+public class ZombieFU extends JApplet {
 
     public static void main(String[] args) {
 
@@ -14,4 +17,14 @@ public class ZombieFU {
         ZombieGame.startGame();
 
     }
+
+    public void init() {
+        System.out.println("Hallo!");
+    }
+
+    public void destroy() {
+        System.out.println("Bye!");
+    }
+
+
 }
